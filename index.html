@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alkhidmat Aghosh Homes - Orphan Care</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-blue': '#0054a6',
+                        'brand-green': '#00a651',
+                        'brand-red': '#ed1c24',
+                        'brand-yellow': '#ffcb11',
+                        'brand-dark': '#333333',
+                        'light-gray': '#f5f5f5'
+                    },
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .tab-btn.active {
+            background-color: #00a651;
+            color: white;
+            border-color: #00a651;
+        }
+        .sub-tab-btn.active {
+            color: #00a651;
+            border-bottom: 2px solid #00a651;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-700 antialiased">
+    
+    
+
+    <!-- Hero Banner -->
+    <section class="relative w-full h-[400px] md:h-[600px] overflow-hidden bg-gray-100 flex items-center justify-center">
+        <img src="/images/aghosh-banner.webp" alt="Aghosh Banner" class="h-full">
+        <!-- Overlay if needed -->
+        <!-- <div class="absolute inset-0 bg-black/20"></div> -->
+    </section>
+
+    <!-- Services / Donation Selection -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Our <span class="text-brand-green">Services</span></h2>
+                <div class="w-24 h-1 bg-brand-green mx-auto mt-4"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6 max-w-4xl mx-auto">
+                <!-- Checkbox Item 1 -->
+                <label class="cursor-pointer group relative">
+                    <input type="checkbox" name="donation_type" value="240000" class="peer sr-only">
+                    <div class="border-2 border-gray-200 peer-checked:border-brand-green peer-checked:bg-green-50 rounded-lg p-6 w-full md:w-80 flex flex-col items-center justify-center transition-all shadow hover:shadow-md">
+                        <span class="text-lg font-medium text-gray-700">Annual Aghosh Home</span>
+                        <strong class="text-brand-green text-xl mt-2">PKR 240,000</strong>
+                        <div class="absolute top-4 right-4 text-brand-green opacity-0 peer-checked:opacity-100">
+                           <i class="fas fa-check-circle text-xl"></i>
+                        </div>
+                    </div>
+                </label>
+
+                <!-- Checkbox Item 2 -->
+                <label class="cursor-pointer group relative">
+                    <input type="checkbox" name="donation_type" value="20000" class="peer sr-only">
+                    <div class="border-2 border-gray-200 peer-checked:border-brand-green peer-checked:bg-green-50 rounded-lg p-6 w-full md:w-80 flex flex-col items-center justify-center transition-all shadow hover:shadow-md">
+                        <span class="text-lg font-medium text-gray-700">Monthly Aghosh Home</span>
+                        <strong class="text-brand-green text-xl mt-2">PKR 20,000</strong>
+                        <div class="absolute top-4 right-4 text-brand-green opacity-0 peer-checked:opacity-100">
+                           <i class="fas fa-check-circle text-xl"></i>
+                        </div>
+                    </div>
+                </label>
+                
+                <button class="bg-brand-red text-white font-bold py-4 px-8 rounded-lg shadow hover:bg-red-700 transition md:self-stretch flex items-center justify-center">
+                    Donate Now
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-12 bg-gray-50 border-t">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+                <div class="flex flex-col items-center">
+                    <div class="w-20 h-20 bg-white rounded-full shadow flex items-center justify-center mb-4 text-4xl text-brand-green">
+                       <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <strong class="text-3xl text-brand-green block">07</strong>
+                    <span class="text-gray-600 font-medium">Planning Phase</span>
+                </div>
+                <div class="flex flex-col items-center">
+                     <div class="w-20 h-20 bg-white rounded-full shadow flex items-center justify-center mb-4 text-4xl text-brand-green">
+                       <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <strong class="text-3xl text-brand-green block">09</strong>
+                    <span class="text-gray-600 font-medium">Under Construction</span>
+                </div>
+                <div class="flex flex-col items-center">
+                     <div class="w-20 h-20 bg-white rounded-full shadow flex items-center justify-center mb-4 text-4xl text-brand-green">
+                       <i class="fas fa-building"></i>
+                    </div>
+                    <strong class="text-3xl text-brand-green block">22</strong>
+                    <span class="text-gray-600 font-medium">Operational</span>
+                </div>
+                <div class="flex flex-col items-center">
+                     <div class="w-20 h-20 bg-white rounded-full shadow flex items-center justify-center mb-4 text-4xl text-brand-green">
+                       <i class="fas fa-child"></i>
+                    </div>
+                    <strong class="text-3xl text-brand-green block">2,059</strong>
+                    <span class="text-gray-600 font-medium">Sponsored Orphans</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories (Video Slider Placeholder) -->
+    <section class="py-16 bg-white">
+         <div class="container mx-auto px-4">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Success <span class="text-brand-green">Stories</span></h2>
+                <div class="w-24 h-1 bg-brand-green mx-auto mt-4"></div>
+            </div>
+
+            <!-- Simple Slider Container -->
+            <div class="relative max-w-4xl mx-auto overflow-hidden group">
+                <div id="video-slider" class="flex transition-transform duration-500 ease-in-out">
+                    <div class="w-full flex-shrink-0 px-2">
+                        <iframe class="w-full h-64 md:h-96 rounded-lg shadow-lg" src="https://www.youtube.com/embed/9jdyFUBK0hA" title="Video 1" allowfullscreen></iframe>
+                    </div>
+                    <div class="w-full flex-shrink-0 px-2">
+                        <iframe class="w-full h-64 md:h-96 rounded-lg shadow-lg" src="https://www.youtube.com/embed/y0sd-2WqCfE" title="Video 2" allowfullscreen></iframe>
+                    </div>
+                     <div class="w-full flex-shrink-0 px-2">
+                        <iframe class="w-full h-64 md:h-96 rounded-lg shadow-lg" src="https://www.youtube.com/embed/LrLRFPJIWZ4" title="Video 3" allowfullscreen></iframe>
+                    </div>
+                </div>
+                
+                <!-- Controls -->
+                <button id="prevBtn" class="absolute left-0 top-1/2 -translate-y-1/2 bg-black/50 text-white p-3 rounded-r hover:bg-brand-green transition">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button id="nextBtn" class="absolute right-0 top-1/2 -translate-y-1/2 bg-black/50 text-white p-3 rounded-l hover:bg-brand-green transition">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jumbo Intro / About -->
+    <section class="relative py-20 bg-cover bg-center bg-fixed text-white" style="background-image: url('https://alkhidmat.org/images/Aghosh/aghosh-banner/aghosh-banner.jpg');">
+        <div class="absolute inset-0 bg-black/70"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                 <h2 class="text-3xl md:text-5xl font-bold mb-8">Alkhidmat Aghosh Homes</h2>
+                 <p class="text-lg md:text-xl leading-relaxed mb-6">
+                     Alkhidmat Foundation's Aghosh Homes project is the best orphanage program in Pakistan, providing unmatched boarding and lodging facilities on the pattern of a Cadet College. The project offers a safe and nurturing environment for orphaned and destitute children to thrive and achieve their full potential.
+                 </p>
+                 <p class="text-lg md:text-xl leading-relaxed mb-8">
+                     At Aghosh Homes, children live in a family-like setting with trained caregivers who provide individual attention and care. The program strives to create a supportive and loving environment where children can feel safe, valued, and empowered.
+                 </p>
+                 <div class="flex flex-col md:flex-row justify-center gap-6 mt-12">
+                     <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20 hover:bg-white/20 transition cursor-pointer">
+                         <div class="text-2xl font-bold text-brand-yellow mb-1">PKR 240,000/Annual</div>
+                         <div class="text-gray-200">Aghosh Home Sponsorship</div>
+                     </div>
+                      <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-white/20 hover:bg-white/20 transition cursor-pointer">
+                         <div class="text-2xl font-bold text-brand-yellow mb-1">PKR 20,000/Monthly</div>
+                         <div class="text-gray-200">Aghosh Home Sponsorship</div>
+                     </div>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Tabs -->
+    <section class="py-16 bg-white" id="locations">
+        <div class="container mx-auto px-4">
+             <div class="text-center mb-10">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Our <span class="text-brand-green">Centers</span></h2>
+                <div class="w-24 h-1 bg-brand-green mx-auto mt-4 mb-8"></div>
+            </div>
+
+            <!-- Main Tabs -->
+            <div class="flex flex-wrap justify-center border-b border-gray-200 mb-8" id="main-tabs">
+                <button class="tab-btn active px-6 py-3 text-sm md:text-base font-semibold text-gray-600 border-b-2 border-transparent hover:text-brand-green transition" data-target="punjab">PUNJAB</button>
+                <button class="tab-btn px-6 py-3 text-sm md:text-base font-semibold text-gray-600 border-b-2 border-transparent hover:text-brand-green transition" data-target="sindh">SINDH</button>
+                <button class="tab-btn px-6 py-3 text-sm md:text-base font-semibold text-gray-600 border-b-2 border-transparent hover:text-brand-green transition" data-target="ajk">AJ & K</button>
+                <button class="tab-btn px-6 py-3 text-sm md:text-base font-semibold text-gray-600 border-b-2 border-transparent hover:text-brand-green transition" data-target="turkey">TURKEY</button>
+                <button class="tab-btn px-6 py-3 text-sm md:text-base font-semibold text-gray-600 border-b-2 border-transparent hover:text-brand-green transition" data-target="kpk">KPK</button>
+            </div>
+
+            <!-- Contents -->
+            <div id="tab-contents">
+                <!-- Punjab Content -->
+                <div class="tab-content active" id="punjab">
+                    <!-- Sub Tabs for Punjab -->
+                    <div class="flex flex-wrap justify-center gap-4 mb-8">
+                        <button class="sub-tab-btn active px-4 py-2 text-sm font-medium text-gray-500 hover:text-brand-green" data-sub="attock">Attock</button>
+                        <button class="sub-tab-btn px-4 py-2 text-sm font-medium text-gray-500 hover:text-brand-green" data-sub="gujranwala">Gujranwala</button>
+                        <button class="sub-tab-btn px-4 py-2 text-sm font-medium text-gray-500 hover:text-brand-green" data-sub="islamabad">Islamabad (Girls)</button>
+                    </div>
+                    <!-- Images for Sub Tabs -->
+                    <div id="sub-tab-contents-punjab">
+                        <div class="sub-content active grid grid-cols-1 md:grid-cols-3 gap-4" id="attock">
+                             <div class="aspect-video bg-gray-200 rounded overflow-hidden"><img src="https://alkhidmat.org/images/Aghosh/aghosh-homes/attock/attock1.jpg" class="w-full h-full object-cover"></div>
+                             <div class="aspect-video bg-gray-200 rounded overflow-hidden"><img src="https://alkhidmat.org/images/Aghosh/aghosh-homes/attock/attock2.jpg" class="w-full h-full object-cover"></div>
+                             <div class="aspect-video bg-gray-200 rounded overflow-hidden"><img src="https://alkhidmat.org/images/Aghosh/aghosh-homes/attock/attock3.jpg" class="w-full h-full object-cover"></div>
+                        </div>
+                        <div class="sub-content hidden grid grid-cols-1 md:grid-cols-3 gap-4" id="gujranwala">
+                              <div class="aspect-video bg-gray-200 rounded overflow-hidden"><img src="https://alkhidmat.org/images/Aghosh/aghosh-homes/gujranwala/gujranwala1.jpg" class="w-full h-full object-cover"></div>
+                             <div class="aspect-video bg-gray-200 rounded overflow-hidden"><img src="https://alkhidmat.org/images/Aghosh/aghosh-homes/gujranwala/gujranwala2.jpg" class="w-full h-full object-cover"></div>
+                             <div class="aspect-video bg-gray-200 rounded overflow-hidden"><img src="https://alkhidmat.org/images/Aghosh/aghosh-homes/gujranwala/gujranwala3.jpg" class="w-full h-full object-cover"></div>
+                        </div>
+                         <div class="sub-content hidden grid grid-cols-1 md:grid-cols-3 gap-4" id="islamabad">
+                              <div class="aspect-video bg-gray-200 rounded overflow-hidden"><img src="https://alkhidmat.org/images/Aghosh/aghosh-homes/islamabad/islamabad1.jpg" class="w-full h-full object-cover"></div>
+                             <div class="aspect-video bg-gray-200 rounded overflow-hidden"><img src="https://alkhidmat.org/images/Aghosh/aghosh-homes/islamabad/islamabad2.jpg" class="w-full h-full object-cover"></div>
+                             <div class="aspect-video bg-gray-200 rounded overflow-hidden"><img src="https://alkhidmat.org/images/Aghosh/aghosh-homes/islamabad/islamabad3.jpg" class="w-full h-full object-cover"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sindh Content -->
+                <div class="tab-content hidden" id="sindh">
+                    <div class="flex flex-wrap justify-center gap-4 mb-8">
+                        <button class="sub-tab-btn-sindh active px-4 py-2 text-sm font-medium text-gray-500 hover:text-brand-green" data-sub="karachi">Karachi</button>
+                    </div>
+                     <div id="sub-tab-contents-sindh">
+                         <div class="sub-content-sindh active grid grid-cols-1 md:grid-cols-3 gap-4" id="karachi">
+                             <div class="aspect-video bg-gray-200 rounded overflow-hidden"><img src="https://alkhidmat.org/images/Aghosh/aghosh-homes/karachi/karachi1.jpg" class="w-full h-full object-cover"></div>
+                             <div class="aspect-video bg-gray-200 rounded overflow-hidden"><img src="https://alkhidmat.org/images/Aghosh/aghosh-homes/karachi/karachi2.jpg" class="w-full h-full object-cover"></div>
+                             <div class="aspect-video bg-gray-200 rounded overflow-hidden"><img src="https://alkhidmat.org/images/Aghosh/aghosh-homes/karachi/karachi3.jpg" class="w-full h-full object-cover"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other Tabs (Simplified for brevity) -->
+                <div class="tab-content hidden text-center" id="ajk">
+                     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="aspect-video bg-gray-200 rounded overflow-hidden"><img src="https://alkhidmat.org/images/Aghosh/aghosh-homes/bagh/bagh1.jpg" class="w-full h-full object-cover"></div>
+                        <div class="aspect-video bg-gray-200 rounded overflow-hidden"><img src="https://alkhidmat.org/images/Aghosh/aghosh-homes/bagh/bagh2.jpg" class="w-full h-full object-cover"></div>
+                        <div class="aspect-video bg-gray-200 rounded overflow-hidden"><img src="https://alkhidmat.org/images/Aghosh/aghosh-homes/bagh/bagh3.jpg" class="w-full h-full object-cover"></div>
+                     </div>
+                </div>
+                 <div class="tab-content hidden text-center" id="turkey">
+                    <h3 class="text-xl font-bold mb-4">Gaziantep</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                         <div class="aspect-video bg-gray-200 rounded overflow-hidden"><img src="https://alkhidmat.org/images/Aghosh/aghosh-homes/turkey/turkey1.jpg" class="w-full h-full object-cover"></div>
+                         <div class="aspect-video bg-gray-200 rounded overflow-hidden"><img src="https://alkhidmat.org/images/Aghosh/aghosh-homes/turkey/turkey2.jpg" class="w-full h-full object-cover"></div>
+                         <div class="aspect-video bg-gray-200 rounded overflow-hidden"><img src="https://alkhidmat.org/images/Aghosh/aghosh-homes/turkey/turkey3.jpg" class="w-full h-full object-cover"></div>
+                    </div>
+                </div>
+                 <div class="tab-content hidden text-center" id="kpk">
+                    <h3 class="text-xl font-bold mb-4">Chitral</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                         <div class="aspect-video bg-gray-200 rounded overflow-hidden"><img src="https://alkhidmat.org/images/Aghosh/aghosh-homes/chitral/chitral1.jpg" class="w-full h-full object-cover"></div>
+                         <div class="aspect-video bg-gray-200 rounded overflow-hidden"><img src="https://alkhidmat.org/images/Aghosh/aghosh-homes/chitral/chitral2.jpg" class="w-full h-full object-cover"></div>
+                         <div class="aspect-video bg-gray-200 rounded overflow-hidden"><img src="https://alkhidmat.org/images/Aghosh/aghosh-homes/chitral/chitral3.jpg" class="w-full h-full object-cover"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News & Events -->
+    <section class="py-16 bg-brand-blue text-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Latest News -->
+                <div class="lg:col-span-2 space-y-6">
+                    <div class="flex justify-between items-center border-b border-white/20 pb-4 mb-6">
+                        <h3 class="text-2xl font-bold">Latest News</h3>
+                        <a href="#" class="text-sm underline opacity-80 hover:opacity-100">View All</a>
+                    </div>
+                    
+                    <!-- News Item 1 -->
+                    <div class="flex flex-col md:flex-row gap-4 bg-white/10 p-4 rounded-lg hover:bg-white/20 transition">
+                        <img src="https://alkhidmat.org/backend/images/blog_images/174210885367d678b5e902e.jpeg" class="w-full md:w-48 h-32 object-cover rounded">
+                        <div>
+                            <span class="text-brand-yellow text-sm font-bold">March 16, 2025</span>
+                            <h4 class="text-lg font-bold mt-1 mb-2">World Orphans Day: Partner With Alkhidmat to Change Lives</h4>
+                            <a href="#" class="text-sm underline hover:text-brand-yellow">Read more ></a>
+                        </div>
+                    </div>
+                     <!-- News Item 2 -->
+                    <div class="flex flex-col md:flex-row gap-4 bg-white/10 p-4 rounded-lg hover:bg-white/20 transition">
+                        <img src="https://alkhidmat.org/backend/images/blog_images/171575200666444c4645f9a.jpeg" class="w-full md:w-48 h-32 object-cover rounded">
+                        <div>
+                            <span class="text-brand-yellow text-sm font-bold">May 15, 2024</span>
+                            <h4 class="text-lg font-bold mt-1 mb-2">Dr. Hafeez ur Rahman inaugurated Alkhidmat Aghosh Home in Rashidabad</h4>
+                            <a href="#" class="text-sm underline hover:text-brand-yellow">Read more ></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar Events/Social -->
+                <div class="space-y-8">
+                    <div class="bg-white text-gray-800 rounded-lg overflow-hidden shadow-lg">
+                        <div class="bg-brand-yellow p-4 font-bold text-center">Events</div>
+                        <div class="p-4">
+                            <img src="https://alkhidmat.org/backend/images/events/169165510464d49bc00b243.webp" class="w-full h-32 object-cover rounded mb-3">
+                            <span class="bg-red-500 text-white text-xs px-2 py-1 rounded">Closed</span>
+                            <span class="text-sm text-gray-500 ml-2">Aug 11, 2024</span>
+                            <h4 class="font-bold text-sm mt-2">Smog Free Lahore Mega Plantation Drive</h4>
+                        </div>
+                    </div>
+                    
+                    <!-- Live Stream Dummy -->
+                    <div class="bg-white text-gray-800 rounded-lg overflow-hidden shadow-lg">
+                        <div class="bg-brand-red text-white p-4 font-bold flex justify-between items-center">
+                            <span>Alkhidmat LIVE</span>
+                            <i class="fas fa-video"></i>
+                        </div>
+                         <div class="relative bg-black h-48 flex items-center justify-center">
+                            <i class="fab fa-youtube text-5xl text-red-600"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Placeholder -->
+    <section class="h-96 w-full bg-gray-200 relative">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d435521.9566367554!2d74.05419769068213!3d31.48263522627715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190483e58107d9%3A0xc23abe6ccc7e2462!2sLahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1647854623101!5m2!1sen!2s" width="100%" height="100%" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+   
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Main Tab Switching
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all main tabs and contents
+                tabBtns.forEach(b => b.classList.remove('active'));
+                tabContents.forEach(c => c.classList.add('hidden'));
+                
+                // Activate clicked tab
+                btn.classList.add('active');
+                const target = document.getElementById(btn.dataset.target);
+                if (target) {
+                    target.classList.remove('hidden');
+                }
+            });
+        });
+
+        // Sub Tab Switching (Punjab)
+        const subBtns = document.querySelectorAll('.sub-tab-btn');
+        const subContents = document.querySelectorAll('.sub-content');
+
+        subBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                subBtns.forEach(b => b.classList.remove('active'));
+                subContents.forEach(c => c.classList.add('hidden'));
+
+                btn.classList.add('active');
+                const target = document.getElementById(btn.dataset.sub);
+                if(target) target.classList.remove('hidden');
+            });
+        });
+
+         // Sub Tab Switching (Sindh)
+        const subBtnsSindh = document.querySelectorAll('.sub-tab-btn-sindh');
+        const subContentsSindh = document.querySelectorAll('.sub-content-sindh');
+
+        subBtnsSindh.forEach(btn => {
+            btn.addEventListener('click', () => {
+                subBtnsSindh.forEach(b => b.classList.remove('active'));
+                subContentsSindh.forEach(c => c.classList.add('hidden'));
+
+                btn.classList.add('active');
+                const target = document.getElementById(btn.dataset.sub);
+                if(target) target.classList.remove('hidden');
+            });
+        });
+
+
+        // Simple Video Slider
+        const slider = document.getElementById('video-slider');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        let currentSlide = 0;
+        const totalSlides = 3; 
+
+        function updateSlider() {
+            slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        nextBtn.addEventListener('click', () => {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateSlider();
+        });
+
+        prevBtn.addEventListener('click', () => {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            updateSlider();
+        });
+
+    </script>
+</body>
+</html>
